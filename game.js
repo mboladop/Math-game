@@ -1,7 +1,48 @@
 let score = 0;
-let scorebox = document.getElementById("score");
+let scoreBox = document.getElementById("score");
 let questionBox = document.getElementById("question");
 let answerForm = document.getElementById("quizForm");
+
+function setAdditionGame() {
+    answerForm.setAttribute("data-gametype", "addition");
+    additionQuiz();
+}
+
+function setSubtractionGame() {
+    answerForm.setAttribute("data-gametype", "subtraction");
+    subtractionQuiz();
+}
+
+function setMultiplicationGame() {
+    answerForm.setAttribute("data-gametype", "multiplication");
+    multiplicationQuiz();
+}g
+
+
+function checkAnswer(){
+    let gametype= answerForm.getAttribute("data-gametype");
+    if (answerForm["answer"].value == answerForm["rightAnswer"].value) {
+        alert("Hey! WELL DONE!");
+        score ++;
+    } else {
+        alert("Oh NO!!! :(");
+        score --;
+    }
+    
+    answerForm["answer"].value ="";
+    scoreBox.textContent = score;
+    if (gametype == "addition"){
+        additionQuiz();
+    } else if (gametype == "subtraction") {
+        subtractionQuiz();
+    } else if (gametype == "multiplication") {
+        multiplicationQuiz();
+    }
+    return false; 
+    
+}
+
+
 
 /* Math.random() 0 0.566 
 x50 = 23.8
@@ -14,5 +55,23 @@ function additionQuiz(){
     questionBox.textContent = "What is : " + num1+ " + " + num2+ " ?";
     answerForm["rightAnswer"].value = (num1 + num2);
 }
-
 additionQuiz();
+
+function subtractionQuiz(){
+    let num1 = Math.floor(Math.random() * 50);
+    let num2 = Math.floor(Math.random() * num1);
+    
+
+    questionBox.textContent = "What is : " + num1+ " - " + num2 + " ?";
+    answerForm["rightAnswer"].value = (num1 - num2);
+}
+subtractionQuiz();
+
+function multiplicationQuiz(){
+    let num1 = Math.floor(Math.random() * 50);
+    let num2 = Math.floor(Math.random() * 50);
+    
+    questionBox.textContent = "What is : " + num1+ " * " + num2+ " ?";
+    answerForm["rightAnswer"].value = (num1 * num2);
+}
+multiplicationQuiz();
