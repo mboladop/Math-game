@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maths game</title>
+</head>
+<body>
+    <button onclick="setAdditionGame()">Addition</button>
+    <button onclick="setSubstractionGame()">Substraction</button>
+    <button onclick="setMultiplicationGame()">Multiplication</button>
+    <p>Your score: <span id="score">0</span></p>
+    <p id="question"></p>
+    <form id="quizForm" name="answerForm" onsubmit="checkAnswer(); return false;" action="#" data-gametype="addition"> 
+    
+    Enter answer: <input type="number" name="answer">
+    <input type="hidden" name="rightAnswer">
+    <input type="submit" value="submit">
+    </form>
+    
+    <script type="text/javascript" src="game.js"> </script>
+</body>
+</html>
