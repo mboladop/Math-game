@@ -80,7 +80,7 @@ function divisionQuiz(){
     let num2 = Math.round((Math.random() * 50)+1);
     let num1 = Math.round((Math.random() * 50) + num2);
     
-    questionBox.textContent = "What is : " + num1+ " / " + num2 + " ?";
+    questionBox.textContent = "What is : " + num1+ " / " + num2 + " ? (Round your answer to the nearest whole number).";
     answerForm["rightAnswer"].value = Math.round(num1 / num2);
 
 }

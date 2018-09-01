@@ -1,20 +1,43 @@
 body{
-    background-color: lightgreen; 
+    background-image: url('../../images/owl-brown-2.png');
+    background-position: right bottom;
+    background-color: lightblue;
+    background-repeat: no-repeat;
     font-family: monospace;
     font-weight: bolder;
     text-align: center;
+    width: 100vw;
+    height: 100vh;
 }
 
-button{
-    color: white;
-    background-color: indigo;
-    border-radius: 100%;
-    width: 30%;
-    height: 50px;
-    font-family: cursive;
-    font-size: medium
-    border-radius: 100%;
-    border-color: pink;
-    border-width: 3px;
-    border: dotted;
+.container.buttons{
+    width: 100%;
+    padding: 25px 5px;
+}
+img{
+    padding: 0px 20px;
+}
+.left{
+    text-align: left;
+}
+.row.buttons{
+    padding-bottom: 5px;
+}
+.score-container{
+    position: relative;
+}
+.text-over-score{
+    font-family: 'Butterfly Kids', cursive;
+    font-size: 30px;
+    position: absolute;
+    top:35%;
+    left:45%;
+}
+.question{
+    font-family: 'Butterfly Kids', cursive;
+    font-size: 40px;
+    padding-left: 30px;
+}
+.center{
+    text-align: center;
 }
