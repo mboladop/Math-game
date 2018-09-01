@@ -25,19 +25,87 @@ img{
 }
 .score-container{
     position: relative;
+    width: 5%;
+    height: auto;
+    text-align: center;
 }
 .text-over-score{
     font-family: 'Butterfly Kids', cursive;
     font-size: 30px;
     position: absolute;
     top:35%;
-    left:45%;
+    left:175%;
 }
 .question{
     font-family: 'Butterfly Kids', cursive;
-    font-size: 40px;
+    font-size: 45px;
     padding-left: 30px;
 }
 .center{
     text-align: center;
+}
+#image-score{
+    width: 300px;
+}
+#submit-btn{
+    background-color: yellow;
+    border-radius: 100%;
+    padding: 15px;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+@media screen and (max-width:2400), (max-height:1200px){
+    .text-over-score{
+        top:35%;
+        left:125px;  
+    }
+    .body{
+        background-size: 200px;
+    }
+}
+@media screen and (max-width:1600), (max-height:992px){
+    .text-over-score{
+        top:35%;
+        left:130px;  
+    }
+}
+@media screen and (max-width:1280), (max-height:802px){
+    .text-over-score{
+        top:35%;
+        left:190%;  
+    }
+}
+@media screen and (max-width:800){
+    body{
+        background-image: none;
+    }
+    #image-score{
+        margin-left: 25vw;
+    }
+    .text-over-score{
+        margin-left: 35vw;
+    }
+    #submit-btn{
+        margin-left: 25%;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:320), (max-height:480px){
+    body{
+        background-image: none;
+    }
+    .container{
+        margin: 10px 0px;
+    }
+    .row{
+        padding: 5px 0px;
+    }
+    .text-over-score{
+        top:35%;
+        left:120px;  
+    }
+    #submit-btn{
+        margin-left: 25%;
+        margin-top: 10px;
+    }
 }
