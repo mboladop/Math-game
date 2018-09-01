@@ -77,12 +77,12 @@ function multiplicationQuiz(){
 multiplicationQuiz();
 
 function divisionQuiz(){
-    
     let num1 = Math.floor(Math.random() * 50);
-    let num2 = Math.floor(Math.random() * 50);
+    let num2 = Math.floor(Math.random() * num1);
     
-    questionBox.textContent = "What is : " + num1+ " / " + num2+ " ?";
-    answerForm["rightAnswer"].value = (num1 / num2);
+
+    questionBox.textContent = "What is : " + num1+ " / " + num2 + " ?";
+    answerForm["rightAnswer"].value = Math.round(num1 / num2);
     
 
 }
