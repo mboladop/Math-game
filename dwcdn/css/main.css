@@ -12,7 +12,7 @@ body{
 
 .container.buttons{
     width: 100%;
-    padding: 25px 5px;
+    padding: 15px 5px;
 }
 img{
     padding: 0px 20px;
@@ -34,7 +34,7 @@ img{
     font-size: 30px;
     position: absolute;
     top:35%;
-    left:175%;
+    left: 170%;
 }
 .question{
     font-family: 'Butterfly Kids', cursive;
@@ -45,7 +45,9 @@ img{
     text-align: center;
 }
 #image-score{
-    width: 300px;
+    width: 315px;
+    height: 220px;
+    padding: 0px;
 }
 #submit-btn{
     background-color: yellow;
@@ -53,6 +55,7 @@ img{
     padding: 15px;
     margin-left: 10%;
     margin-top: 10px;
+    border: none;
 }
 @media screen and (max-width:2400), (max-height:1200px){
     .text-over-score{
@@ -72,7 +75,7 @@ img{
 @media screen and (max-width:1280), (max-height:802px){
     .text-over-score{
         top:35%;
-        left:190%;  
+        left:135px;  
     }
 }
 @media screen and (max-width:800){
@@ -83,7 +86,7 @@ img{
         margin-left: 25vw;
     }
     .text-over-score{
-        margin-left: 35vw;
+        left:140px;  
     }
     #submit-btn{
         margin-left: 25%;
@@ -102,7 +105,7 @@ img{
     }
     .text-over-score{
         top:35%;
-        left:120px;  
+        left:130px;  
     }
     #submit-btn{
         margin-left: 25%;
