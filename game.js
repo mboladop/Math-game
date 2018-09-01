@@ -16,8 +16,12 @@ function setSubtractionGame() {
 function setMultiplicationGame() {
     answerForm.setAttribute("data-gametype", "multiplication");
     multiplicationQuiz();
-}g
+}
 
+function setDivisionGame() {
+    answerForm.setAttribute("data-gametype", "division");
+    divisionQuiz();
+}
 
 function checkAnswer(){
     let gametype= answerForm.getAttribute("data-gametype");
@@ -37,16 +41,12 @@ function checkAnswer(){
         subtractionQuiz();
     } else if (gametype == "multiplication") {
         multiplicationQuiz();
+    } else if (gametype == "division") {
+       divisionQuiz();
     }
     return false; 
     
 }
-
-
-
-/* Math.random() 0 0.566 
-x50 = 23.8
-Math.floor()= 23*/
 
 function additionQuiz(){
     let num1 = Math.floor(Math.random() * 50);
@@ -75,3 +75,15 @@ function multiplicationQuiz(){
     answerForm["rightAnswer"].value = (num1 * num2);
 }
 multiplicationQuiz();
+
+function divisionQuiz(){
+    
+    let num1 = Math.floor(Math.random() * 50);
+    let num2 = Math.floor(Math.random() * 50);
+    
+    questionBox.textContent = "What is : " + num1+ " / " + num2+ " ?";
+    answerForm["rightAnswer"].value = (num1 / num2);
+    
+
+}
+divisionQuiz();
