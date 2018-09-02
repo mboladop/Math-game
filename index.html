@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="README_files/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
     <title>Maths game</title>
 
     <link rel="stylesheet" href="dwcdn/css/bootstrap.min.css" type="text/css" />
@@ -12,39 +13,40 @@
     
     <link rel="stylesheet" href="dwcdn/css/main.css" type="text/css" />
 </head>
-<body>
+<body class='body-img'>
     <div class="container buttons">
         <div class="row buttons">
-            <div class="col-sm-6 col-xs-12 center"> 
-                <img onclick="setAdditionGame()" src="images/+.png" width=18% alt="add">
-                <img onclick="setSubtractionGame()" src="images/-.png" width=18% alt="subtract">
-                <img onclick="setMultiplicationGame()"src="images/x.png" width=18% alt="multiply">
-                <img onclick="setDivisionGame()" src="images/division.png" width=18% alt="divide">
-                </div>
-            <div class="col-sm-6 col-xs-12 score-container">  
-                <img id='image-score' src="images/star.png" alt="star container score">
-                <div class="text-over-score center">
-                    <p><strong>SCORE</strong></p>
-                    <p> <span id="score">0</span></p>
-                </div>
-            </div>
-           
+            <div class="col-sm-12 left"> 
+                <img onclick="setAdditionGame()" src="images/+.png" alt="add">
+                <img onclick="setSubtractionGame()" src="images/-.png" alt="subtract">
+                <img onclick="setMultiplicationGame()"src="images/x.png" alt="multiply">
+                <img onclick="setDivisionGame()" src="images/division.png" alt="divide"> 
+            </div> 
         </div>
+    </div>
+    <div class="container qs-score">
         <div class="row">
-            <div class="col-sm-6 col-xs-12 left question">
+            <div class="col-sm-6">
                 <p id="question"></p>
-                <form id="quizForm" name="answerForm" onsubmit="checkAnswer(); return false;" action="#" data-gametype="addition"> 
-                    Enter answer: <br>
-                    <input width=50 type="number" name="answer" placeholder="Good luck!">
-                    <input type="hidden" name="rightAnswer"><br>
-                    <input id='submit-btn' type="submit" value="SEND">
-                    
-                </form>
             </div>
-            <div class="col-sm-6 left">
-
+            <div class="col-sm-6 right">
+                <strong>SCORE!</strong>
+                <span id="score">0</span>
             </div>
         </div>
+    </div>
+    <div class="container form">
+       <div class="row">
+           <div class="col-sm">
+            <form id="quizForm" name="answerForm" onsubmit="checkAnswer(); return false;" action="#" data-gametype="addition"> 
+                Enter answer: <br>
+                <input width=50 type="number" name="answer" placeholder="Good luck!">
+                <input type="hidden" name="rightAnswer"><br>
+                <input id='submit-btn' type="submit" value="SEND">
+                
+            </form>
+           </div>
+       </div>
     </div>
     <script type="text/javascript" src="dwcdn/js/jquery.min.js"></script>
     <script type="text/javascript" src="game.js"></script>

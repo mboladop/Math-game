@@ -1,41 +1,34 @@
 body{
+    background-color: #ffffff;
+}
+.body-img{
     background-image: url('../../images/owl-brown-2.png');
-    background-position: right bottom;
-    background-color: lightblue;
+    background-position: right top;
     background-repeat: no-repeat;
-    font-family: monospace;
-    font-weight: bolder;
-    text-align: center;
+    background-size: 50%;
     width: 100vw;
     height: 100vh;
 }
-
-.container.buttons{
+.container{
     width: 100%;
+}
+.container.form{
     padding: 15px 5px;
 }
 img{
-    padding: 0px 20px;
+    width: 9%;
+    padding: 0px 30px;
 }
 .left{
     text-align: left;
 }
+.right{
+    text-align: right;
+}
 .row.buttons{
     padding-bottom: 5px;
 }
-.score-container{
-    position: relative;
-    width: 5%;
-    height: auto;
-    text-align: center;
-}
-.text-over-score{
-    font-family: 'Butterfly Kids', cursive;
-    font-size: 30px;
-    position: absolute;
-    top:35%;
-    left: 170%;
-}
+
 .question{
     font-family: 'Butterfly Kids', cursive;
     font-size: 45px;
@@ -44,11 +37,10 @@ img{
 .center{
     text-align: center;
 }
-#image-score{
-    width: 315px;
-    height: 220px;
-    padding: 0px;
+.left{
+    text-align: left;
 }
+
 #submit-btn{
     background-color: yellow;
     border-radius: 100%;
@@ -58,57 +50,11 @@ img{
     border: none;
 }
 @media screen and (max-width:2400), (max-height:1200px){
-    .text-over-score{
-        top:35%;
-        left:125px;  
-    }
-    .body{
-        background-size: 200px;
-    }
-}
-@media screen and (max-width:1600), (max-height:992px){
-    .text-over-score{
-        top:35%;
-        left:130px;  
-    }
-}
-@media screen and (max-width:1280), (max-height:802px){
-    .text-over-score{
-        top:35%;
-        left:135px;  
-    }
+    
 }
 @media screen and (max-width:800){
-    body{
-        background-image: none;
-    }
-    #image-score{
-        margin-left: 25vw;
-    }
-    .text-over-score{
-        left:140px;  
-    }
-    #submit-btn{
-        margin-left: 25%;
-        margin-top: 10px;
-    }
-}
-@media screen and (max-width:320), (max-height:480px){
-    body{
-        background-image: none;
-    }
-    .container{
-        margin: 10px 0px;
-    }
-    .row{
-        padding: 5px 0px;
-    }
-    .text-over-score{
-        top:35%;
-        left:130px;  
-    }
-    #submit-btn{
-        margin-left: 25%;
-        margin-top: 10px;
+    img{
+        width: 30%;
+        padding: 5px 5px;
     }
 }
