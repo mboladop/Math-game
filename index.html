@@ -17,7 +17,7 @@
     <div class="container buttons">
         <div class="row buttons">
             <div class="col-sm-12 left"> 
-                <img onclick="setAdditionGame()" src="images/+.png" alt="add">
+                <img id='image' onclick="setAdditionGame(); myFunction();" src="images/+.png" alt="add">
                 <img onclick="setSubtractionGame()" src="images/-.png" alt="subtract">
                 <img onclick="setMultiplicationGame()"src="images/x.png" alt="multiply">
                 <img onclick="setDivisionGame()" src="images/division.png" alt="divide"> 
@@ -26,10 +26,10 @@
     </div>
     <div class="container qs-score">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-xs-5">
                 <p id="question"></p>
             </div>
-            <div class="col-sm-6 right">
+            <div id='scorescore' class="col-sm-6 right">
                 <strong>SCORE!</strong>
                 <span id="score">0</span>
             </div>
@@ -37,17 +37,24 @@
     </div>
     <div class="container form">
        <div class="row">
-           <div class="col-sm">
+           <div class="col-sm-3">
             <form id="quizForm" name="answerForm" onsubmit="checkAnswer(); return false;" action="#" data-gametype="addition"> 
-                Enter answer: <br>
                 <input width=50 type="number" name="answer" placeholder="Good luck!">
                 <input type="hidden" name="rightAnswer"><br>
                 <input id='submit-btn' type="submit" value="SEND">
-                
             </form>
            </div>
        </div>
     </div>
+<script>
+    
+
+function myFunction(){
+    let img = document.getElementById("image");
+    img.rotate(20*Math.PI/180);
+    }
+
+</script>
     <script type="text/javascript" src="dwcdn/js/jquery.min.js"></script>
     <script type="text/javascript" src="game.js"></script>
     <script type="text/javascript" src="dwcdn/js/bootstrap.min.js"></script>

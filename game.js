@@ -52,7 +52,7 @@ function additionQuiz(){
     let num1 = Math.floor(Math.random() * 50);
     let num2 = Math.floor(Math.random() * 50);
     
-    questionBox.textContent = "What is : " + num1+ " + " + num2+ " ?";
+    questionBox.textContent = num1+ " + " + num2+ " ?";
     answerForm["rightAnswer"].value = (num1 + num2);
 }
 additionQuiz();
@@ -62,7 +62,7 @@ function subtractionQuiz(){
     let num2 = Math.floor(Math.random() * num1);
     
 
-    questionBox.textContent = "What is : " + num1+ " - " + num2 + " ?";
+    questionBox.textContent =  num1+ " - " + num2 + " ?";
     answerForm["rightAnswer"].value = (num1 - num2);
 }
 subtractionQuiz();
@@ -71,7 +71,7 @@ function multiplicationQuiz(){
     let num1 = Math.floor(Math.random() * 50);
     let num2 = Math.floor(Math.random() * 50);
     
-    questionBox.textContent = "What is : " + num1+ " * " + num2+ " ?";
+    questionBox.textContent = num1+ " * " + num2+ " ?";
     answerForm["rightAnswer"].value = (num1 * num2);
 }
 multiplicationQuiz();
@@ -80,7 +80,7 @@ function divisionQuiz(){
     let num2 = Math.round((Math.random() * 50)+1);
     let num1 = Math.round((Math.random() * 50) + num2);
     
-    questionBox.textContent = "What is : " + num1+ " / " + num2 + " ? (Round your answer to the nearest whole number).";
+    questionBox.textContent = num1+ " / " + num2 + " ? (Round your answer to the nearest whole number).";
     answerForm["rightAnswer"].value = Math.round(num1 / num2);
 
 }

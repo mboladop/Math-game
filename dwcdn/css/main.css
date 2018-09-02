@@ -1,19 +1,30 @@
 body{
-    background-color: #ffffff;
+    background-color: #75FDD9;
+}
+.rotated-image {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .body-img{
     background-image: url('../../images/owl-brown-2.png');
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 45%;
     width: 100vw;
     height: 100vh;
 }
 .container{
     width: 100%;
+    padding-left: 15px;
+}
+.container.buttons{
+    padding-top: 25px;
 }
 .container.form{
-    padding: 15px 5px;
+    margin-top: 50px;
+}
+.container.qs-score{
+    margin-top: 18%;
 }
 img{
     width: 9%;
@@ -29,10 +40,14 @@ img{
     padding-bottom: 5px;
 }
 
-.question{
-    font-family: 'Butterfly Kids', cursive;
-    font-size: 45px;
-    padding-left: 30px;
+#question{
+    font-family: 'News Cycle', sans-serif;
+    font-size: 35px;
+}
+#quizForm{
+    font-family: 'News Cycle', sans-serif;
+    font-size: 35px;
+    text-align: center;
 }
 .center{
     text-align: center;
@@ -40,21 +55,59 @@ img{
 .left{
     text-align: left;
 }
-
+#scorescore{
+    font-family: 'Chango', cursive;
+    padding-right: 205px;
+    font-size: 50px;
+}
 #submit-btn{
-    background-color: yellow;
-    border-radius: 100%;
-    padding: 15px;
+    padding: 10px 15px;
     margin-left: 10%;
     margin-top: 10px;
     border: none;
+    border-radius: 0px;
+    font-family: 'Chango', cursive;
 }
-@media screen and (max-width:2400), (max-height:1200px){
-    
-}
-@media screen and (max-width:800){
+@media screen and (max-width:1000px) {
     img{
-        width: 30%;
-        padding: 5px 5px;
+        width: 13%;
+        padding: 0px 30px;
+    }
+
+}
+@media screen and (max-width:700px) {
+    img{
+        width: 15%;
+        padding: 0px 30px;
+    }
+
+}
+@media screen and (max-width:550px) {
+    img{
+        width: 14%;
+        padding: 0px 20px;
+    }
+    .container.form{
+        margin-top: 80px;
+    }
+    #scorescore{
+        padding-right: 15px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:450px) {
+    img{
+        width: 13%;
+        padding: 0px 5px;
+    }
+    .container.buttons{
+        padding-top: 40px;
+        padding-left: 5px;
+    }
+    .body-img{
+        background-size: 30%;
+    }
+    #question{
+        font-size: 25px;
     }
 }
