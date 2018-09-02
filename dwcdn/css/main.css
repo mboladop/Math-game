@@ -1,10 +1,6 @@
 body{
     background-color: #75FDD9;
 }
-.rotated-image {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
 .body-img{
     background-image: url('../../images/owl-brown-2.png');
     background-position: right top;
@@ -43,6 +39,7 @@ img{
 #question{
     font-family: 'News Cycle', sans-serif;
     font-size: 35px;
+    color: black;
 }
 #quizForm{
     font-family: 'News Cycle', sans-serif;
@@ -59,6 +56,7 @@ img{
     font-family: 'Chango', cursive;
     padding-right: 205px;
     font-size: 50px;
+    color: black;
 }
 #submit-btn{
     padding: 10px 15px;
@@ -67,20 +65,32 @@ img{
     border: none;
     border-radius: 0px;
     font-family: 'Chango', cursive;
+    background: transparent;
+    color: black;
+}
+footer {
+    background-color: #000000;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.links{
+    padding: 10px 0px;
 }
 @media screen and (max-width:1000px) {
     img{
         width: 13%;
         padding: 0px 30px;
     }
-
 }
 @media screen and (max-width:700px) {
     img{
         width: 15%;
         padding: 0px 30px;
     }
-
 }
 @media screen and (max-width:550px) {
     img{
@@ -108,6 +118,15 @@ img{
         background-size: 30%;
     }
     #question{
+        font-size: 20px;
+    }
+    .container.form{
+        margin-top: 30px;
+    }
+    .container.qs-score{
+        margin-top: 15%;
+    }
+    #submit-btn{
         font-size: 25px;
     }
 }
