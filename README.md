@@ -2,7 +2,7 @@
 
 # Math game
 
-![Responsive Demo](https://raw.githubusercontent.com/mboladop/Math-game/master/README_files/.png "Responsive Demo")
+![Responsive Demo](https://raw.githubusercontent.com/mboladop/Math-game/master/README_files/responsive.gif "Responsive Demo")
 
 ### What is this website for?
 Math game is a game created to further learn Javascript during Code Institute´s Full-stack Software developer bootcamp.
